@@ -3,31 +3,33 @@
 
 //System
 
-//Geolocation
+//Components
+const country = document.querySelector('.country');
+const region = document.querySelector('.region');
+const city = document.querySelector('.city');
 const longitude = document.querySelector('.longitude');
+const latitude = document.querySelector('.latitude');
+const ip = document.querySelector('.ip');
 
 
-
-var x = document.getElementById("demo");
+function displayLocation(res){
+  country.innerText = res.country;
+  region.innerText = res.regionName;
+  city.innerText = res.city;
+  longitude.innerText = res.lon;
+  latitude.innerText = res.lat;
+  ip.innerText = res.query;
+}
 
 
 //Display System Content
 const systemContent= () =>{
-  
 
-  
-  longitude.innerText = navigator.geolocation.longitude;
+  fetch('http://ip-api.com/json/?fields=61439')
+  .then(res => res.json())
+  .then(res => displayLocation(res));
 
-
-  fetch('https://api.ipify.org')
-    .then((res)=> res.text())
-    .then(ip => console.log(ip))
-    .catch(err => console.log(err))
 }
 
 //Events
 window.addEventListener('load', systemContent);
-
-
-
-
