@@ -1,9 +1,11 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root{
   --background-dark: rgb(24,23,32);
   --font-text: rgb(255, 255, 255);
-  --box-width: 360px;
+  --box-width: 500px;
 }
 
 .container {
@@ -13,12 +15,13 @@
 
 body {
   background-color: var(--background-dark);
-  font-family: "Open Sans", sans-serif,'Arial','Helvetica';
+  font-family: "Montserrat", sans-serif;
 }
+
 
 h2, p {
   color: var(--font-text);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 
@@ -37,6 +40,7 @@ h1 {
   text-align: left;
   line-height: 60px;
   font-size: 32px;
+
 }
 
 nav ul {
@@ -67,10 +71,15 @@ nav ul li a:hover {
 }
 
 
-
 /*------------------------------------------*/
 /*              Display                     */
 /*------------------------------------------*/
+
+.content {
+  display:flex;
+  justify-content: center;
+}
+
 
 .info {
   display: flex;
@@ -87,13 +96,15 @@ nav ul li a:hover {
   width:var(--box-width);
   border: solid 1px #35323a;
   border-radius: 5px;
-  margin: 15px 0;
+  margin: 50px 0;
   justify-content: center;
   box-shadow: 1px 1px;
+
 }
 
 .box-title {
-  background-color: #35323a;
+
+  background-color: #654ede;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
@@ -103,6 +114,10 @@ nav ul li a:hover {
 
 .box-title h2{
   line-height: 30px;
+}
+
+.result{
+  color: #c0c0c0;
 }
 
 .box-online {
