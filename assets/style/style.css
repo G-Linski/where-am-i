@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 :root{
   --background-dark: rgb(24,23,32);
   --font-text: rgb(255, 255, 255);
@@ -18,12 +17,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 h2, p {
   color: var(--font-text);
   font-size: 30px;
 }
-
 
 /*------------------------------------------*/
 /*              Header                      */
@@ -70,7 +67,6 @@ nav ul li a:hover {
   gap:30px;
 }
 
-
 /*------------------------------------------*/
 /*              Display                     */
 /*------------------------------------------*/
@@ -80,16 +76,15 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-
 .info {
   display: flex;
   gap: 8px;
   margin-left: 15px;
-  padding: 8px 0;
+  padding: 12px 0;
 }
 
 .info h2 {
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .box {
@@ -99,63 +94,46 @@ nav ul li a:hover {
   margin: 50px 0;
   justify-content: center;
   box-shadow: 1px 1px;
-
 }
 
 .box-title {
-
   background-color: #654ede;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
   justify-content: center;
-  height: 30px;
+  height: 40px;
 }
 
-.box-title h2{
-  line-height: 30px;
+.box-title h2 {
+  line-height: 40px;
 }
 
-.result{
+.result {
   color: #c0c0c0;
-}
-
-.box-online {
-  height: 60px;
-  line-height: 60px;
-  width: var(--box-width);
-  background-color: #ee1e1e;
-  border: 1px solid #ee1e1e;
-  border-radius: 5px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  box-shadow: 1px 1px;
-  margin-bottom: 15px;
 }
 
 /*------------------------------------------*/
 /*              Utility                     */
 /*------------------------------------------*/
 
-
-.space-around{
+.space-around {
   justify-content: space-around;
 }
 
-.space-evenly{
+.space-evenly {
   justify-content: space-evenly;
 }
 
-.space-between{
+.space-between {
   justify-content: space-between;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.center{
+.center {
   align-content: center;
 }
 

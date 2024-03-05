@@ -5,6 +5,10 @@ We can use JavaScript and a 3rd party API to get our location.
 This includes country, IP address and more
 To learn more about the API, feel free to click [here.](https://ip-api.com/)
 
+## Important Note about HTTP and HTTPS
+Unfortunately this API is not available for free using HTTPS
+And GitHub-Pages will only accept requests from HTTPS sources
+So while this code will work elsewhere, it won't run on GitHub Pages
 
 ## Fetch Request from 3rd Party API
 First off let's get a Location Object

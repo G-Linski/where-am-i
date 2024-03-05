@@ -20,7 +20,7 @@ function displayLocation(res){
 //Display System Content
 const systemContent= () =>{
 
-  fetch('https://ip-api.com/json/?fields=61439')
+  fetch('http://ip-api.com/json/?fields=61439')
   .then(location => location.json())
   .then(location => displayLocation(location));
 
