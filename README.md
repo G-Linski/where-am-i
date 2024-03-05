@@ -2,25 +2,32 @@
 
 ## Geolocation
 We can use JavaScript and a 3rd party API to get our location.
-This includes country, IP address and more
-To learn more about the API, feel free to click [here.](https://ip-api.com/)
+
+This includes country, IP address and more.
+
+To learn more about the API, feel free to click [here.](https://ip-api.com/).
 
 ## Important Note about HTTP and HTTPS
-Unfortunately this API is not available for free using HTTPS
-And GitHub-Pages will only accept requests from HTTPS sources
-So while this code will work elsewhere, it won't run on GitHub Pages
+Unfortunately this API is not available for free using HTTPS.
+
+And GitHub-Pages will only accept requests from HTTPS sources.
+
+So while this code will work elsewhere, it won't run on GitHub Pages.
 
 ## Fetch Request from 3rd Party API
-First off let's get a Location Object
-Here's some code I stole off a Youtube video
+First off let's get a Location Object.
+
+Here's some code I stole off a Youtube video.
 ```javascript
 fetch('http://ip-api.com/json/?fields=61439')
   .then(location => location.json())
   .then(location => console.log(location));
 ```
-This code uses fetch to request data from a 3rd party site
-We then can convert this data into JSON, for easier manipulation and readibility
-To see this object we can print it to the console
+This code uses fetch to request data from a 3rd party site.
+
+We then can convert this data into JSON, for easier manipulation and readibility.
+
+To see this object we can print it to the console.
 
 
 ## Printed JSON Object
@@ -44,8 +51,9 @@ zip: "R2N"
 ```
 
 ## Displaying our Geolocation Data
-To display this data, we'll first need an HTML element
-In our case an h2 element with a class of country
+To display this data, we'll first need an HTML element.
+
+In our case an h2 element with a class of country.
 
 ```html
 <h2 class="country"></h2>
@@ -71,11 +79,15 @@ window.addEventListener('load', systemContent);
 ```
 
 ## Saving Fetch Requests into a Variable
-For future reference, if we want to save our fetch requests into a variable
-We will need to use asynchronous functions
-This is how I generally prefer to work with variables
-The async keywords will make the function return a promise
-The await keyword makes the function await for a response from the API
+For future reference, if we want to save our fetch requests into a variable.
+
+We will need to use asynchronous functions.
+
+This is how I generally prefer to work with variables.
+
+The async keywords will make the function return a promise.
+
+The await keyword makes the function await for a response from the API.
 
 ```javascript
 async function systemContent() {
@@ -84,8 +96,9 @@ async function systemContent() {
   console.log(responseJSON);
 }
 ```
-Using these keywords we can now save the fetch request into a variable
-This variable can now be used elsewhere
+Using these keywords we can now save the fetch request into a variable.
+
+This variable can now be used elsewhere.
 
 That ends our tutorial to see this in action click below.
 
