@@ -102,7 +102,7 @@ This variable can now be used elsewhere.
 
 That ends our tutorial to see this in action click below.
 
-##[Where AM I?](https://g-linski.github.io/where-am-i/)
+## [Where AM I?](https://g-linski.github.io/where-am-i/)
 
 
 
